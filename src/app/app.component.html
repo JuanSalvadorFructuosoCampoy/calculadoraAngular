@@ -8,10 +8,13 @@
 <body>
   <h1>{{title}}</h1>
   <form>
-    Numero 1: <input type="text" [(ngModel)]="numero1" name="numero1"><br/><br/>     <!--IMPORTANTE poner el atributo name con el mismo nombre que la variable del archivo .ts para que se vinculen-->
-    Numero 2: <input type="text" [(ngModel)]="numero2" name="numero2"><br/><br/>
+    Numero 1: <input type="number" [(ngModel)]="numero1" name="numero1"><br/><br/>     <!--IMPORTANTE poner el atributo name con el mismo nombre que la variable del archivo .ts para que se vinculen-->
+    Numero 2: <input type="number" [(ngModel)]="numero2" name="numero2"><br/><br/>
 
-    <input type="submit" value="Sumar">
+    <input type="submit" value="Sumar" (click)="sumar()">
+    <input type="submit" value="Restar" (click)="restar()">
+    <input type="submit" value="Multiplicar" (click)="multiplicar()">
+    <input type="submit" value="Dividir" (click)="dividir()">
   </form>
 
   <p>Resultado: {{resultado}} </p>
