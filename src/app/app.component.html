@@ -7,6 +7,7 @@
 </head>
 <body>
   <h1>{{title}}</h1>
+  <div class="container">
   <form>
     Numero 1: <input type="number" [(ngModel)]="numero1" name="numero1"><br/><br/>     <!--IMPORTANTE poner el atributo name con el mismo nombre que la variable del archivo .ts para que se vinculen-->
     Numero 2: <input type="number" [(ngModel)]="numero2" name="numero2"><br/><br/>
@@ -16,7 +17,7 @@
     <input type="submit" value="Multiplicar" (click)="multiplicar()">
     <input type="submit" value="Dividir" (click)="dividir()">
   </form>
-
+  </div>
   <p>Resultado: {{resultado}} </p>
 </body>
 </html>
